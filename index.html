@@ -4,7 +4,7 @@
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text">World markets</span></a><span class="trademark"> by TradingView</span></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
-  "colorTheme": "dark",
+  "colorTheme": "light",
   "dateRange": "12M",
   "locale": "en",
   "largeChartUrl": "",
@@ -13,7 +13,7 @@
   "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
   "plotLineColorFalling": "rgba(41, 98, 255, 1)",
   "gridLineColor": "rgba(240, 243, 250, 0)",
-  "scaleFontColor": "#DBDBDB",
+  "scaleFontColor": "#0F0F0F",
   "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
   "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
   "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
@@ -24,16 +24,28 @@
       "title": "Indices",
       "symbols": [
         {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500 Index"
+          "s": "SP:SPX",
+          "d": "S&P 500 Index",
+          "logoid": "indices/s-and-p-500",
+          "currency-logoid": "country/US"
         },
         {
-          "s": "FOREXCOM:NSXUSD",
-          "d": "US 100 Cash CFD"
+          "s": "NASDAQ:NDX",
+          "d": "NASDAQ",
+          "logoid": "indices/nasdaq-100",
+          "currency-logoid": "country/US"
         },
         {
-          "s": "FOREXCOM:DJI",
-          "d": "Dow Jones Industrial Average Index"
+          "s": "DJ:DJI",
+          "d": "Dow Jones",
+          "logoid": "indices/dow-30",
+          "currency-logoid": "country/US"
+        },
+        {
+          "s": "NSE:NIFTY",
+          "d": "Nifty",
+          "logoid": "indices/nifty-50",
+          "currency-logoid": "country/IN"
         }
       ],
       "originalTitle": "Indices"
@@ -44,6 +56,10 @@
         {
           "s": "BMFBOVESPA:ISP1!",
           "d": "S&P 500"
+        },
+        {
+          "s": "BMFBOVESPA:EUR1!",
+          "d": "Euro"
         },
         {
           "s": "CMCMARKETS:GOLD",
@@ -61,23 +77,46 @@
       "originalTitle": "Futures"
     },
     {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "TVC:GOLD",
+          "d": "Gold",
+          "logoid": "metal/gold",
+          "currency-logoid": "country/US"
+        },
+        {
+          "s": "TVC:SILVER",
+          "d": "Silver",
+          "logoid": "metal/silver",
+          "currency-logoid": "country/US"
+        },
+        {
+          "s": "TVC:USOIL",
+          "d": "Crude Oil",
+          "logoid": "crude-oil",
+          "currency-logoid": "country/US"
+        }
+      ]
+    },
+    {
       "title": "Crypto",
       "symbols": [
         {
-          "s": "COINBASE:BTCUSD",
-          "d": "BTC",
+          "s": "BITSTAMP:BTCUSD",
+          "d": "Bitcoin",
           "base-currency-logoid": "crypto/XTVCBTC",
           "currency-logoid": "country/US"
         },
         {
-          "s": "COINBASE:ETHUSD",
-          "d": "ETH",
+          "s": "BITSTAMP:ETHUSD",
+          "d": "Ethereum",
           "base-currency-logoid": "crypto/XTVCETH",
           "currency-logoid": "country/US"
         },
         {
-          "s": "KRAKEN:XRPUSD",
-          "d": "XRP",
+          "s": "BITSTAMP:XRPUSD",
+          "d": "Ripple",
           "base-currency-logoid": "crypto/XTVCXRP",
           "currency-logoid": "country/US"
         }
